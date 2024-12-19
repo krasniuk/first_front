@@ -11,7 +11,7 @@ Download angular
     node -v
 
     npm install -g @angular/cli
-    ng new angular
+    ng new angular --no-standalone
 
 Run application
 ---
