@@ -14,3 +14,5 @@ $ nvm install v20.18.1
 $ node -v
 
 $ npm install -g @angular/cli
+
+ng new angular
