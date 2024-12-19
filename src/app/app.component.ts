@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'angular';
+    public Title = 'There is a var';
+    public VarInput = 'input something';
+    public show_message(){
+        alert('Hello world!!')
+    }
 }
