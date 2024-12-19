@@ -18,4 +18,6 @@ Run application
     
     ng serve -o
     ng build
+
+    ng g c calculator
   
