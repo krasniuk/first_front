@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { CalcularorComponent } from "./calcularor/calcularor.component";
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.scss',
+    imports: [CalcularorComponent]
 })
 export class AppComponent {
-  title = 'angular';
+    public Title = 'There is a var';
+    public VarInput = 'input something';
+    public show_message(){
+        alert('Hello world!!')
+    }
 }
