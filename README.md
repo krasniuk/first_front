@@ -17,4 +17,5 @@ Run application
 ---
     
     ng serve -o
+    ng build
   
