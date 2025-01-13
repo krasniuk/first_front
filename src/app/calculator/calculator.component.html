@@ -1,1 +1,34 @@
-<p>calculator works!</p>
+<p> ------------- calculator.component -------------</p>
+
+<ng-container></ng-container>
+<select>
+  <option>val1</option>
+</select>
+
+<div class="calculator" >
+  <p class="calculator__value1">
+    <span>Val1 = </span>
+    <input type="number" [(ngModel)]="Val1">
+  </p>
+  <p class="calculator__value2">
+    <span>Val2 = </span>
+    <input type="number" [(ngModel)]="Val2">
+  </p>
+  <p class="calculator__operation">
+    <button (click)="sum()">            + </button>
+    <button (click)="min()">            - </button>
+    <button (click)="division()">       / </button>
+    <button (click)="multiplication()"> * </button>
+  </p>
+  <p class="calculator__result">
+    <span>Result = {{Result}}</span>
+  </p>
+  <div>
+    <p> === Operation history ===</p>
+    <p *ngFor="let HistoryElem of History7">
+      {{HistoryElem}}
+    </p>
+  </div>
+</div>
+
+<p> ------------- END (calculator.component) -------------</p>
